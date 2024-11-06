@@ -1,0 +1,269 @@
+/* form.css */
+.registrationForm {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto ;
+    width: 50%;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.305);
+    background-color:#f2f2f2;
+    border-radius: 20px;
+
+}
+
+.registrationForm img{
+    width: 80px;
+    margin-bottom: 20px;
+
+}
+.formulairee{
+    width: 50%;
+    background-color:#f96d00;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.formulairee form {
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color:#f96d00;
+}
+.formulairee form input::placeholder{
+    color: #393e46bd;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulairee form input:focus{
+    outline: none;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 10px #393e46 ;
+    color: #393e46;
+}
+.formulairee form select:focus{
+    outline: none;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 10px #393e46 ;
+    color: #393e46;
+}
+.formulairee form input,
+.formulairee form select {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;;
+    font-weight: 600;
+    font-size: 15px;
+    color: #393e46bd;
+}
+.formulairee .bttn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .formulairee .bttn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #f2f2f2;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .formulairee .bttn:hover::before {
+    scale: 3;
+  }
+  
+  .formulairee .bttn:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .formulairee .bttn:active {
+    scale: 1;
+  }
+  
+  
+  
+/* .formulairee form input[type="submit"] {
+    background-color: #ff6207fa;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 15px;
+    width: 50%;
+    margin-left: 25%;
+} */
+/*  */
+/* .formulairee form input[type="submit"]{  
+    margin-top: 29px;    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #222831;
+    transition: all 1000ms;
+    background-color:#f2f2f2 ;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 3px solid #ff6207fa;
+
+}
+.formulairee form input[type="submit"]::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff6207fa;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+.formulairee form input[type="submit"]:hover{
+    color: #f96d00;
+    transform: scale(1.1);
+    outline: 2px solid #ff6207fa;
+    box-shadow: 4px 5px 17px -4px #ff6207fa;
+}
+.formulairee form input[type="submit"]:hover::before{
+    width: 250%;
+} */
+/*  */
+.formulairee form h2 {
+    font-size: 25px;
+    font-weight: 650;
+    color: #393e46;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.registrationForm input[type="submit"]:hover {
+    background-color: #fcfcfc;
+   color: #f96d00;
+   border: 1px solid #f96d00;
+}
+
+.description-form{
+    width: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #222831;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.description-form h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f2f2f2;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    margin: auto 20px;
+}
+.description-form p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #f2f2f2;
+    position: relative;
+    top: 21%;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.description-form img {
+    width: 300px;
+    position: relative;
+    top: 25%;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .registrationForm{
+        width: 80%;
+    }
+    .description-form{
+        display: none;
+    }
+    .formulairee{
+        width: 100%;
+        border-left: none;
+        border-radius: 15px;
+    }
+    .formulairee form {
+        padding: 20px;
+    }
+    .formulairee form input, .formulairee form select {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .registrationForm{
+        width: 80%;
+    }
+    .formulairee form {
+        padding: 20px;
+    }
+    .formulairee form input, .formulairee form select {
+        width: 100%;
+    }
+    .formulairee form input[type="submit"] {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .registrationForm{
+        width: 80%;
+    }
+    .formulairee form {
+        padding: 20px;
+    }
+    .formulairee form input, .formulairee form select {
+        width: 100%;
+    }
+    .formulairee form input[type="submit"] {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}

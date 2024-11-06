@@ -1,0 +1,393 @@
+.premier {
+    position: relative; /* Assurez-vous que la position est relative pour que le pseudo-élément soit positionné correctement */
+    text-align: center;
+    padding: 90px 0;
+    border: black;
+    height: 700px;
+    /* box-shadow: 5px 0 10px #222831; */
+    display: center;
+}
+
+.premier::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../bkgdwinner.jpg");
+    filter: blur(7px); /* Appliquez l'effet de flou ici */
+    z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu de la div */
+}
+.premier h1{
+    font-size: 52px;
+    color:  #222831;
+    margin: 24px;
+}
+.premier button{  
+    margin-top: 29px;    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1000ms;
+    background-color:#ff6207c0 ;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 3px solid #ff6207fa;;
+
+}
+.premier button::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff6207fa;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+.premier button:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #ff6207fa;;
+    box-shadow: 4px 5px 17px -4px #ff6207fa;;
+}
+.premier button:hover::before{
+    width: 250%;
+}
+.premier p{
+    
+    font-size: 21px;
+    color:  #222831;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: hoff voff blur #000000;
+}
+.deuxieme{
+    display: flex;
+    position: relative;
+    height: auto;
+    background-color: white;
+    padding: 160px;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.presentation {
+   
+    display: flex;
+   flex-direction: column;
+    padding: 60px;
+    /* Couleur de fond claire pour une meilleure lisibilité */
+     /* Arrondi des coins pour un aspect plus doux */
+     /* Ombre légère pour donner de la profondeur */
+    width: 80%; /* Largeur relative pour une meilleure adaptabilité */
+     /* Marge automatique pour centrer horizontalement */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+.presentation h2 {
+    color: #333; /* Couleur du texte pour le titre */
+    font-size: 39px; /* Taille du texte pour le titre */
+    margin-bottom: 40px; /* Espace entre le titre et le texte */
+    
+    
+}
+
+.presentation p {
+    color: #666; /* Couleur du texte pour le paragraphe */
+    font-size: 16px; /* Taille du texte pour le paragraphe */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    text-align: justify; /* Alignement justifié pour une meilleure utilisation de l'espace */
+    margin: 0 20px; /* Marge pour contrôler l'espacement du texte par rapport aux bords */
+}
+
+.p4image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: #000000;
+    width: 34%; /* Assurez-vous que l'image s'adapte à la largeur de son conteneur */
+    height: auto; /* Maintenez le ratio d'aspect de l'image */
+    border-radius: 9rem; /* Arrondissez les coins de l'image pour un aspect plus doux */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre légère pour donner de la profondeur */
+    margin: 20px 0; /* Ajoutez de l'espace au-dessus et en-dessous de l'image */
+    
+}
+.troisieme {
+    display: flex;
+    position: relative;
+    height: auto;
+    margin-top: 0px;
+    background-color: #f2f2f2;
+    padding: 160px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button{
+    cursor:pointer;
+}
+.second{
+    background-color: #ff6207fa;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+.second ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+.second ul li{
+    height: 20rem;
+    color: #222831;
+    width: 20%;
+    padding: 65px;
+    background-color:#f2f2f2;
+    margin-right: 10px;
+    margin: 40px;
+    border-radius: 4rem;
+    box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.248);
+    transition: all 0.6s ease;
+    text-align: center;
+    align-items: center;
+}
+.equipes{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipes img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.cardequipe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 36px;
+    border-radius: 24px;
+    overflow: hidden;
+    line-height: 1.6;
+    /* border: 1px solid #999999; */
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0rem 6px 13px rgba(0, 0, 0, 0.1),
+      0rem 24px 24px rgba(0, 0, 0, 0.09), 0rem 55px 33px rgba(0, 0, 0, 0.05),
+      0rem 97px 39px rgba(0, 0, 0, 0.01), 0rem 152px 43px rgba(0, 0, 0, 0); 
+  }
+  
+  .contentequipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: #14191f;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentequipe .heading {
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    line-height: 1.3;
+    z-index: 1;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentequipe .para {
+    z-index: 1;
+    opacity: 0.8;
+    font-size: 20px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    color: black;
+  }
+  .contentequipe .para2 {
+    z-index: 1;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    color: #666666;
+  }
+  
+  .cardequipe::before {
+    content: "";
+    position: absolute;
+    right: -5.2rem;
+    top: -5.2rem;
+    width: 10.4rem;
+    height: 10.4rem;
+    background: #f96d00;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .cardequipe::after {
+    content: "";
+    position: absolute;
+    left: -5.2rem;
+    bottom: -5.2rem;
+    width: 10.4rem;
+    height: 10.4rem;
+    background: #f96d00;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .cardequipe:hover::before {
+    scale: 7;
+    opacity: 1;
+  }
+  
+  .cardequipe:hover::after {
+    scale: 7;
+    opacity: 1;
+  }
+  
+  .cardequipe:hover .content .heading {
+    color: #ffffff;
+  }
+  
+  .cardequipe:hover .content .para {
+    color: #ffffff;
+  }
+  .cardequipe:hover .content .para2 {
+    color: #ffffff;
+  }
+  
+  .cardequipe:hover {
+    box-shadow: 0rem 6px 13px rgba(0, 0, 0, 0.1),
+      0rem 24px 24px rgba(0, 0, 0, 0.09), 0rem 55px 33px rgba(0, 0, 0, 0.05),
+      0rem 97px 39px rgba(0, 0, 0, 0.01), 0rem 152px 43px rgba(0, 0, 0, 0);
+    border-color: #f96d00;
+    scale: 1.05;
+  }
+  /* media devices for equipes div */
+  /* Mobile devices */
+@media (max-width: 600px) {
+    .equipes{
+        height: 900px;
+    }
+    .equipes .contentequipe img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .cardequipe {
+        width: 160px;
+        padding: 18px;
+    }
+    .cardequipe .para{
+        font-size: 13px;
+        text-align: center;
+    }
+    .cardequipe .para2{
+        font-size: 10px;
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .equipes img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 15px;
+    }
+
+    .cardequipe {
+        width: 240px;
+        padding: 27px;
+    }
+}
+
+/* Desktop devices */
+@media (min-width: 1025px) {
+    .equipes img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .cardequipe {
+        width: 18%;
+        padding: 36px;
+    }
+}
+
+  
+
+/* Styles par défaut pour les grands écrans */
+/* (Votre CSS existant ici) */
+
+/* Tablettes en mode portrait et paysage */
+@media (max-width: 1024px) {
+    .troisieme, .deuxieme, .presentation {
+        width: 95%;
+        margin: 10px auto;
+    } 
+    /* Ajustez d'autres styles si nécessaire */
+}
+
+/* Smartphones en mode portrait */
+@media (max-width: 768px) {
+    .troisieme, .deuxieme, .presentation {
+        width: 98%;
+        margin: 5px auto;
+    }
+    .deuxieme, .troisieme{
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: column;
+    }.deuxieme, .troisieme, .p4image{
+        width: 90%;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 30px;
+      }
+      .deuxieme .p4image{
+        display: none;
+      }
+
+    /* Ajustez d'autres styles si nécessaire */
+}
+
+/* Smartphones en mode paysage */
+@media (max-width: 480px) {
+    .troisieme, .deuxieme, .presentation {
+        width: 99%;
+        margin: 2px auto;
+    }
+    /* Ajustez d'autres styles si nécessaire */
+}
+

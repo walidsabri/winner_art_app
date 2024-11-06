@@ -1,0 +1,103 @@
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+.login-container .login-img{
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    
+}
+.form-container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    height: 500px;
+    margin-left: 100px;
+    border: 1px solid #f96c001c;
+}
+
+.logf input{
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #393e46a1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.logf input:focus{
+    outline: none;
+    border-color: #f96d00;
+    box-shadow: 0 0 5px #f96d00;
+}
+.logf input::placeholder{
+    color: #222831;
+
+}
+
+.logf button{
+    width: 40%;
+    padding: 8px;
+    background-color: #f96d00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logf button:hover{
+    background-color: #393e46;
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f96d00;
+    text-shadow: 0 0 1px #222831;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 900px) {
+    .login-img {
+        display: none; /* Hide the login image */
+    }
+    .logf input{
+        width: 80%; /* Make the input fields wider on mobile devices */
+    }
+    .logf input::placeholder {
+        color: #222831;
+        font-size: 14px; /* Adjust the font size for mobile devices */
+    }
+
+    .form-container {
+        width: 90%; /* Adjust the width */
+        margin-left :0 ; /* Remove the left margin */
+        height: 500px; /* Adjust the height */
+    }
+
+    .logf button {
+        width: 80%; /* Make the button wider on mobile devices */
+        padding: 12px; /* Increase the padding for better touch targets */
+    }
+
+    .form-container h2 {
+        font-size: 18px; /* Adjust the font size for mobile devices */
+        margin-bottom: 40px; /* Reduce the margin on mobile devices */
+    }
+}

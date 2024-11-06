@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da5050b0.css",
+    "main.js": "/static/js/main.6b9f452d.js",
+    "static/media/winnercoloresvg.svg": "/static/media/winnercoloresvg.977eb2eb6e9b40d2351d37b7af5cb23d.svg",
+    "static/media/bkgdwinner.jpg": "/static/media/bkgdwinner.6f943c809928fe0edce1.jpg",
+    "static/media/3d-casual-life-man-plays-guitar.png": "/static/media/3d-casual-life-man-plays-guitar.d1f73a883cfc0635305e.png",
+    "static/media/p2.jpg": "/static/media/p2.fc57f60b751d52b3db44.jpg",
+    "static/media/p4.jpg": "/static/media/p4.e8c2dc341683aa8762a3.jpg",
+    "static/media/logologo.png": "/static/media/logologo.170dfabe9a9587ed1440.png",
+    "static/media/tik.svg": "/static/media/tik.eb12b19ed248ea0ad47ba8b12b3d405b.svg",
+    "static/media/insta.svg": "/static/media/insta.3fe9282b609daaf024cbd3555c35eeb5.svg",
+    "static/media/map.svg": "/static/media/map.529f060c34cac4a4dde2ee59e8e487fc.svg",
+    "static/media/fb.svg": "/static/media/fb.7eb3f921f51a26480448ba6f3e276417.svg",
+    "index.html": "/index.html",
+    "main.da5050b0.css.map": "/static/css/main.da5050b0.css.map",
+    "main.6b9f452d.js.map": "/static/js/main.6b9f452d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da5050b0.css",
+    "static/js/main.6b9f452d.js"
+  ]
+}
